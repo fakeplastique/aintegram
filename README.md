@@ -1,4 +1,4 @@
-# aintegram
+# 🧠 aintegram
 # Integration of OpenAI API into Telegram Bot for Math and Programmings Tasks
 
 A Telegram bot that provides assistance for mathematical and programming questions using OpenAI's GPT-4, with special handling for LaTeX notation and image processing capabilities.
