@@ -33,8 +33,7 @@ A Telegram bot that provides assistance for mathematical and programming questio
 ├── services/
 │   ├── __init__.py
 │   ├── openai_service.py  # OpenAI API integration
-│   ├── latex_service.py   # LaTeX processing and rendering
-│   └── image_service.py   # Image processing
+│   └── latex_service.py   # LaTeX processing and rendering
 ├── handlers/
 │   ├── __init__.py
 │   ├── commands.py        # Command handlers
