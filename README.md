@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# aitegram
-Telegram Math &amp; Programming Bot Using OpenAI API
-=======
-# Integration of OpenAI API into Telegram Bot for Math and Programmings Tasks 
+# aintegram
+# Integration of OpenAI API into Telegram Bot for Math and Programmings Tasks
 
 A Telegram bot that provides assistance for mathematical and programming questions using OpenAI's GPT-4, with special handling for LaTeX notation and image processing capabilities.
 
@@ -137,4 +134,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [OpenAI](https://openai.com/) for GPT-4
 - [Pix2Tex](https://github.com/lukas-blecher/LaTeX-OCR) for LaTeX OCR
 - [Aiogram](https://aiogram.dev/) for Telegram bot framework
->>>>>>> e49b22d (Initial commit)
