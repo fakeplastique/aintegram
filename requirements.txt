@@ -1,0 +1,7 @@
+aiogram>=3.0.0
+openai>=1.0.0
+matplotlib
+sympy
+pix2tex
+python-dotenv
+pillow

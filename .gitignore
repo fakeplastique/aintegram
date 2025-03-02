@@ -1,0 +1,15 @@
+# Environment
+.env
+.venv/
+
+# Local database
+database.db
+
+# Generated images
+*.jpg
+*.png
+
+# Logs
+*.log
+
+
