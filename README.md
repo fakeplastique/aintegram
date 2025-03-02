@@ -47,8 +47,8 @@ A Telegram bot that provides assistance for mathematical and programming questio
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/telegram-math-bot.git
-   cd telegram-math-bot
+   git clone https://github.com/fakeplastique/aintegram.git
+   cd aintegram
    ```
 
 2. Create a virtual environment and activate it:
