@@ -1,0 +1,20 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Python build files
+__pycache__/
+*.pyc
+
+# Local database
+database.db
+
+# Generated files (rendered LaTeX images, downloads)
+generated/
+
+# Logs
+*.log
+
+# IDE
+.idea/
