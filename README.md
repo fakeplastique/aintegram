@@ -9,6 +9,8 @@ A Telegram bot that provides assistance for mathematical and programming questio
 - **Programming Help**: Answers coding questions and analyzes code snippets
 - **Image Recognition**: Uses OCR to extract LaTeX from images
 - **File Processing**: Handles document uploads for code analysis
+- **Non-blocking core**: Blocking work (SQLite, matplotlib rendering, OCR inference) is offloaded to worker threads so the event loop stays responsive
+- **Fail-fast startup**: Required environment variables are validated before the bot connects
 
 ## 🛠️ Technologies Used
 
@@ -38,9 +40,10 @@ A Telegram bot that provides assistance for mathematical and programming questio
 │   ├── __init__.py
 │   ├── commands.py        # Command handlers
 │   └── messages.py        # Message handlers
-└── utils/
-    ├── __init__.py
-    └── text_processing.py # Text manipulation utilities
+├── utils/
+│   ├── __init__.py
+│   └── text_processing.py # Text manipulation utilities
+└── generated/             # Transient files (downloads, rendered images); git-ignored
 ```
 
 ## 🔧 Installation
@@ -108,7 +111,9 @@ The bot stores:
 - Message history
 - Errors for debugging
 
-Database structure is defined in `database/models.py`.
+Database structure is defined in `database/models.py`. Each operation uses a short-lived
+connection (see `database/db_manager.py`) and is exposed through async wrappers that run
+off the event loop, so database I/O never blocks message handling.
 
 ## 🔒 Security
 
